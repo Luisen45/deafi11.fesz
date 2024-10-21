@@ -1,12 +1,14 @@
+/* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-image: url("https://i.imgur.com/WC3wrDA.jpg");
+  background-image: url('https://i.imgur.com/WC3wrDA.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+/* Estilos de navegación */
 nav {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
@@ -32,6 +34,11 @@ nav ul li a {
   font-weight: bold;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de las secciones */
 section {
   padding: 100px 20px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -40,10 +47,10 @@ section {
 
 h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-iframe,
-video {
+iframe, video {
   display: block;
   margin: 0 auto;
 }
