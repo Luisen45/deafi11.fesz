@@ -29,15 +29,10 @@
   <section id="video">
     <h2>Video</h2>
     <!-- Insertar video aquí -->
-    <!-- Usando etiqueta <video> si tienes el archivo alojado en línea -->
     <video width="640" height="360" controls>
       <source src="URL_DE_TU_VIDEO.mp4" type="video/mp4">
       Tu navegador no soporta el elemento de video.
     </video>
-    <!-- O puedes usar un iframe si el video está en YouTube -->
-    <!--
-    <iframe width="560" height="315" src="URL_DE_TU_VIDEO" frameborder="0" allowfullscreen></iframe>
-    -->
   </section>
 
   <section id="encuesta2">
@@ -50,7 +45,12 @@
     <h2>Ganadores</h2>
     <p>Contenido sobre los ganadores.</p>
   </section>
-  <button id="contadorBtn">Visitas: <span id="contador">0</span></button>
+
+  <!-- Contador de visitas -->
+  <section>
+    <button id="contadorBtn">Visitas: <span id="contador">0</span></button>
+  </section>
+
   <!-- Vincular el archivo JavaScript -->
   <script src="script.js"></script>
 </body>
