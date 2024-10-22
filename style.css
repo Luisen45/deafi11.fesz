@@ -44,6 +44,18 @@ section {
   background-color: rgba(255, 255, 255, 0.8);
   margin-top: 60px;
 }
+#contadorBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contadorBtn:hover {
+  background-color: #45a049;
+}
 
 h2 {
   text-align: center;
