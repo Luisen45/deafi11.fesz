@@ -1,18 +1,19 @@
-// Asegurarse de que el código se ejecute cuando la página esté cargada
+// Se ejecuta cuando la página cargue
 window.onload = function() {
-  // Obtener el valor inicial del contador desde LocalStorage, o inicializar en 0 si no existe
+  // Obtener valor inicial del contador (de LocalStorage)
   let contador = localStorage.getItem('contadorVisitas') || 0;
+  contador = parseInt(contador, 10);
 
-  // Mostrar el valor del contador en la página
+  // Mostrar el valor actual del contador
   document.getElementById('contador').textContent = contador;
 
-  // Función que incrementa el contador y lo guarda en LocalStorage
+  // Función para incrementar y guardar el contador
   function incrementarContador() {
-      contador++;
-      document.getElementById('contador').textContent = contador;
-      localStorage.setItem('contadorVisitas', contador); // Guardar el contador en LocalStorage
+    contador++;
+    document.getElementById('contador').textContent = contador;
+    localStorage.setItem('contadorVisitas', contador);
   }
 
-  // Asignar la función al botón
+  // Asignar evento al botón
   document.getElementById('contadorBtn').addEventListener('click', incrementarContador);
 };
