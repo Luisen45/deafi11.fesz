@@ -2,51 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Página</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Ocelote Podcast</title>
+  
+  <!-- Fuente desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
   <!-- Vincular el archivo CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- Meta etiqueta para responsividad -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Metadatos para SEO -->
+  <meta name="description" content="Página de encuestas y video del Ocelote Podcast">
+  <meta name="keywords" content="encuestas, video, ganadores, podcast, ocelote">
+  
 </head>
 <body>
-  <!-- Navegación -->
-  <nav>
-    <ul>
-      <li><a href="#encuesta1">Encuesta 1</a></li>
-      <li><a href="#video">Video</a></li>
-      <li><a href="#encuesta2">Encuesta 2</a></li>
-      <li><a href="#ganadores">Ganadores</a></li>
-    </ul>
-  </nav>
+  <!-- Navegación fija -->
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#top">Ocelote Podcast</a>
+      </div>
+      <ul class="menu">
+        <li><a href="#encuesta1">Encuesta 1</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#encuesta2">Encuesta 2</a></li>
+        <li><a href="#ganadores">Ganadores</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Contenido -->
-  <section id="encuesta1">
-    <h2>Encuesta 1</h2>
-    <!-- Insertar Google Form aquí -->
-    <iframe src="URL_DE_TU_ENCUESTA_1" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-  </section>
+  <!-- Contenido principal -->
+  <main id="top">
+    <section id="encuesta1">
+      <h2>Encuesta 1</h2>
+      <!-- Reemplaza URL_DE_TU_ENCUESTA_1 con el link de tu Google Form -->
+      <iframe src="URL_DE_TU_ENCUESTA_1" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" title="Encuesta 1">Cargando…</iframe>
+    </section>
 
-  <section id="video">
-  <h2>Video</h2>
-  <!-- Insertar video aquí -->
-  <iframe src="https://drive.google.com/file/d/1NHUW44GManUFmn73cGbrI8l6pNb1I3JY/preview" width="640" height="480" allow="autoplay"></iframe>
-</section>
+    <section id="video">
+      <h2>Video</h2>
+      <!-- Coloca aquí el video que desees (YouTube, Drive, etc.). Asegúrate que el enlace sea público. -->
+      <iframe src="https://drive.google.com/file/d/1NHUW44GManUFmn73cGbrI8l6pNb1I3JY/preview" 
+              width="640" height="480" allow="autoplay" frameborder="0" title="Video del Podcast">
+      </iframe>
+      <p>Disfruta de nuestro video más reciente.</p>
+    </section>
 
-  <section id="encuesta2">
-    <h2>Encuesta 2</h2>
-    <!-- Insertar segunda Google Form aquí -->
-    <iframe src="URL_DE_TU_ENCUESTA_2" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-  </section>
+    <section id="encuesta2">
+      <h2>Encuesta 2</h2>
+      <!-- Reemplaza URL_DE_TU_ENCUESTA_2 con el link de tu segundo Google Form -->
+      <iframe src="URL_DE_TU_ENCUESTA_2" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" title="Encuesta 2">Cargando…</iframe>
+    </section>
 
-  <section id="ganadores">
-    <h2>Ganadores</h2>
-    <p>Contenido sobre los ganadores.</p>
-  </section>
+    <section id="ganadores">
+      <h2>Ganadores</h2>
+      <p>Aquí anunciaremos a los ganadores de las encuestas.</p>
+    </section>
 
-  <!-- Contador de visitas -->
-  <section>
-    <button id="contadorBtn">Visitas: <span id="contador">0</span></button>
-  </section>
+    <!-- Contador de visitas -->
+    <section id="contador-section">
+      <button id="contadorBtn">Visitas: <span id="contador">0</span></button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Ocelote Podcast. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Vincular el archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
 
   <!-- Vincular el archivo JavaScript -->
   <script src="script.js"></script>
