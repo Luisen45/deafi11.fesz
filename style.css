@@ -1,61 +1,89 @@
-/* Estilos generales */
+/* Estilo base */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   background-image: url('https://i.imgur.com/WC3wrDA.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #333;
+  scroll-behavior: smooth; /* desplazamiento suave */
 }
 
-/* Estilos de navegación */
-nav {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+/* Navegación */
+header {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 999;
 }
 
-nav ul {
+nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+nav ul.menu {
   list-style: none;
   display: flex;
-  justify-content: center;
+  gap: 15px;
   margin: 0;
 }
 
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
+nav ul.menu li a {
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+nav ul.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
-/* Estilos de las secciones */
+/* Contenido de las secciones */
+main {
+  margin-top: 80px; /* para que no quede oculto tras la nav */
+}
+
 section {
   padding: 100px 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 0 auto 40px auto;
+  max-width: 1000px;
+  border-radius: 10px;
 }
 
-h2 {
+section h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #000;
 }
 
 iframe, video {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
-/* Estilos del botón del contador */
+#contador-section {
+  text-align: center;
+}
+
+/* Botón del contador */
 #contadorBtn {
   background-color: #4CAF50;
   color: white;
@@ -63,8 +91,19 @@ iframe, video {
   border: none;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 #contadorBtn:hover {
   background-color: #45a049;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  position: relative;
 }
